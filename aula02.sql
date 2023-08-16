@@ -1,4 +1,8 @@
+DROP DATABASE IF EXISTS db_sistema_bancario;
+
 CREATE DATABASE db_sistema_bancario;
+
+\c db_sistema_bancario;
 
 CREATE TABLE usuario(nome varchar(50), idade integer);
 
@@ -57,10 +61,10 @@ ADD
     COLUMN idade integer;
 
 ALTER TABLE
-    RENAME COLUMN idade TO idade_usuario;
+    cliente RENAME COLUMN idade TO idade_usuario;
 
 ALTER TABLE
-    DROP COLUMN idade_usuario;
+    cliente DROP COLUMN idade_usuario;
 
 ALTER TABLE
-    cliente rename to tblclient;
+    cliente rename to tbl_client;
