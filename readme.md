@@ -30,4 +30,5 @@ Replace the <computer-username> with the System-Username, which can be found usi
 ```
 whoami
 ```
+![image](https://github.com/itsmorais/dsm-bdr-202302/assets/53665466/8eb5a2f6-3964-4ea3-9751-3e75d18547bd)
 
