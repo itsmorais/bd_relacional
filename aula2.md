@@ -49,3 +49,4 @@ Alterar tabelas:
 ```sql
 ALTER TABLE cliente ADD COLUMN idade integer;
 ```
+

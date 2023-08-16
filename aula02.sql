@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS db_sistema_bancario;
 
 CREATE DATABASE db_sistema_bancario;
 
-\c db_sistema_bancario;
+\c db_sistema_bancario; -- conectar no bd db_sistema_bancario.
 
 CREATE TABLE usuario(nome varchar(50), idade integer);
 
@@ -68,3 +68,7 @@ ALTER TABLE
 
 ALTER TABLE
     cliente rename to tbl_client;
+
+CREATE SCHEMA michael;
+-- \dn para listar os schemas
+
