@@ -113,7 +113,7 @@ INSERT INTO
     tbl_livros
 VALUES
     (
-        'L001',
+        001,
         '101',
         'DISPONIVEL'
     );
@@ -122,7 +122,7 @@ INSERT INTO
     tbl_livros
 VALUES
     (
-        'L002',
+        002,
         '102',
         'ALUGADO'
     );
@@ -131,7 +131,7 @@ INSERT INTO
     tbl_livros
 VALUES
     (
-        'L003',
+        003,
         '103',
         'DISPONIVEL'
     );
@@ -140,7 +140,7 @@ INSERT INTO
     tbl_livros
 VALUES
     (
-        'L004',
+        004,
         '104',
         'ALUGADO'
     );
@@ -149,7 +149,7 @@ INSERT INTO
     tbl_livros
 VALUES
     (
-        'L005',
+        005,
         '105',
         'DISPONIVEL'
     );
@@ -161,7 +161,7 @@ VALUES
     (
         'E001',
         '001',
-        'L001'
+        001
     );
 
 INSERT INTO
@@ -170,7 +170,7 @@ VALUES
     (
         'E002',
         '002',
-        'L003'
+        003
     );
 
 INSERT INTO
@@ -179,7 +179,7 @@ VALUES
     (
         'E003',
         '003',
-        'L005'
+        005
     );
 
 INSERT INTO
@@ -188,7 +188,7 @@ VALUES
     (
         'E004',
         '004',
-        'L002'
+        002
     );
 
 INSERT INTO
@@ -197,7 +197,7 @@ VALUES
     (
         'E005',
         '005',
-        'L004'
+        004
     );
 
 SELECT

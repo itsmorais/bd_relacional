@@ -26,11 +26,6 @@ CREATE TABLE tbl_cliente(
     endereco text
 );
 
-CREATE TABLE tbl_emprestimo(
-    numero_emprestimo text PRIMARY KEY,
-    codigo_cliente integer,
-    codigo_livro text
-);
 
 CREATE TABLE tbl_titulo(
     codigo_titulo integer NOT NULL PRIMARY KEY,
@@ -41,7 +36,12 @@ CREATE TABLE tbl_titulo(
 
 -- Coluna codigo_titulo faz referencia a coluna codigo_titulo da tabela tbl_titulo.
 CREATE TABLE tbl_livros(
-    cod_livro text PRIMARY KEY,
+    cod_livro integer PRIMARY KEY,
     codigo_titulo integer references tbl_titulo(codigo_titulo),
     status text DEFAULT 'DISPONIVEL' :: chk_status
+);
+CREATE TABLE tbl_emprestimo(
+    numero_emprestimo text PRIMARY KEY,
+    codigo_cliente integer references tbl_cliente(codigo_cliente),
+    codigo_livro integer references tbl_livros(cod_livro)
 );
