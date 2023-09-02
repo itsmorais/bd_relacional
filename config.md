@@ -10,7 +10,7 @@ em seguida:
 sudo psql
 ```
 
-Para rodar scripts:
+Para rodar scripts:     
 ```
 psql -U <nome_do_usuario> -d <nome_do_banco> -f arquivo.sql
 ```
